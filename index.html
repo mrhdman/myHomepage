@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="main.js"></script>
+
+
+
+    <style>
+
+        body {background-color: black;}
+
+        h1 {
+            color: gray
+        }
+
+        a:hover {
+            color: green
+        }
+
+        a {
+            color: black;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        .square{
+            height:300px;
+            width:300px;
+            background-color: rgba(228, 230, 215, 0.721);
+            border: 5px solid lightblue;
+            /* margin-bottom: 10px; */
+            /* transform property allows you to apply cool */
+            /* transformations of any element that is otherwise just a rect */
+            /* 1. rotate
+            2. scale 
+            3. skew 
+            4. translate */
+            transition: all 1s;
+            text-align:center
+        }
+
+        .square:hover{
+            transform: rotate(0deg) !important;
+        }
+        .square.rotate{
+            /* rotate takes, in degrees, how much to rotate */
+            /* transform: rotateX(45deg); */
+            /* transform: rotateY(45deg); */
+            transform: rotateZ(45deg);
+        }
+        .square.scale{
+            /* scale takes in % how large or small to make */
+            /* an element relative to it's base size */
+            transform: scale(.5);
+            /* transform: scaleX(.5); */
+            /* transform: scaleY(.5); */
+        }
+        /* .square.skew{
+            transform: skew(45deg)
+        } */
+        /* .square.translate{
+            transform: translate(200px,200px);
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">  
+        <div class="row">
+            <div class="col-6">
+                <div class="square scale">
+                    <h1>Time Wasters</h1>
+                        <a href="https://www.espn.com/" target="_blank">ESPN</a>
+                        <h6>-</h6>
+                        <a href="https://www.reddit.com/" target="_blank">Reddit</a>
+                        <h6>-</h6>
+                        <a href="https://coinmarketcap.com//" target="_blank">Crypto Market</a>
+                        <h6>-</h6>
+                        <a href="https://www.youtube.com/" target="_blank">Youtube</a>
+                        <h6>-</h6>
+                        <a href="https://www.apple.com/" target="_blank">Apple</a>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="square scale">
+                    <h1>Knowledge</h1>
+                        <a href="http://kidscancode.org/lessons/" target="_blank">Kids can Code</a>
+                        <h6>-</h6>
+                        <a href="https://www.w3schools.com/" target="_blank">w3schools</a>
+                        <h6>-</h6>
+                        <a href="https://www.w3schools.com/html/" target="_blank">w3 HTML</a>
+                        <h6>-</h6>
+                        <a href="https://www.w3schools.com/css/" target="_blank">w3 CSS</a>
+                        <h6>-</h6>
+                        <a href="https://www.w3schools.com/js/" target="_blank">w3 JS</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="square scale">
+                    <h1>School</h1>
+                        <a href="https://digitalcrafts.slack.com/messages/" target="_blank">Slack</a>
+                        <h6>-</h6>
+                        <a href="https://www.github.com/rbunch-dc" target="_blank">Rob's Hub</a>
+                        <h6>-</h6>
+                        <a href="https://app.schoology.com/course/1895979105/materials" target="_blank">Schoology</a>
+                        <h6>-</h6>
+                        <a href="https://app.schoology.com/course/1895979105/materials?f=149701510" target="_blank">unit1</a>
+                        <h6>-</h6>
+                        <a href="https://app.schoology.com/course/1895979105/materials?f=149701606" target="_blank">unit2</a>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="square scale">
+                    <h1>My Work</h1>
+                        <a href="https://www.github.com/mrhdman/" target="_blank">Github</a>
+                        <h6>-</h6>
+                        <a href="https://www.github.com/mrhdman/pythonPlayground/" target="_blank">pythonPlayground</a>
+                        <h6>-</h6>
+                        <a href="https://www.github.com/mrhdman/82Frames" target="_blank">82 Frames</a>
+                        <h6>-</h6>
+                        <a href="https://github.com/mrhdman/htmlcss" target="_blank">htmlcss</a>
+                        <h6>-</h6>
+                        <a href="file:///Users/school/Desktop/htmlcss/7windows/index.html" target="_blank">myHomepage</a>
+                </div>
+            </div>
+        </div>    
+    </div>
+</body>
+</html>
